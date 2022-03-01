@@ -40,16 +40,16 @@ function generatePassword() {
   if (inclSpecialCharacters) {
     characterArray = characterArray.concat(specialCharacters);
   }
-  console.log(characterArray);
-  console.log(numOfCharacters);
+  // console.log(characterArray);
+  // console.log(numOfCharacters);
 
-  var finalString = "";
+  var suggestedPassword = "";
 
   for (var i =0; i < parseInt(numOfCharacters); i++) {
     var randomIndex = Math.floor(Math.random()*characterArray.length);
-    finalString += characterArray[randomIndex];
+    suggestedPassword += characterArray[randomIndex];
   }
-  return finalString;
+  return suggestedPassword;
 }
 
 
